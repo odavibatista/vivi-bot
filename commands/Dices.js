@@ -1,14 +1,19 @@
 const { SlashCommandBuilder } = require('discord.js')
 
+
 module.exports = {
   data: new SlashCommandBuilder()
       .setName('rl')
-      .setDescription('Rolls an Exalted based-dice'),
+      .setDescription('Rolls an Exalted-based dice')
+      .addStringOption(option =>
+        option.setName("dados")
+          .setDescription('Quantidade de dados a ser rolada:'))
+      ,
   
       async execute(interaction)  {
-        const dices = 10
-          await interaction.reply(`**${interaction.user.username}** rolou ${dices} dados.
-**Sucessos:** ${exalted(dices)}
+        const dices = interaction.options.getString('dados')
+          await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} dados.
+**Sucessos: ** ${exalted(parseInt(dices))}
 **Resultados:** ${resultsArr}`)
       }
   }
