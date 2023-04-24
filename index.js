@@ -1,51 +1,231 @@
-const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js')
 
-const dotenv = require('dotenv')
-dotenv.config()
-const { TOKEN, CLIENT_ID, GUILD_ID } = process.env
+//Importação do modulo discord.js
+module.exports = {
+  data: new SlashCommandBuilder()
+      .setName('rl')
+      .setDescription('Rolls an Exalted-based dice')
+      .addStringOption(option =>
+        option.setName("dados")
+          .setDescription('Quantidade de dados a ser rolada:'))
+      ,
+  
+      async execute(interaction)  {
+        const dices = interaction.options.getString('dados')
+          await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} dados.
+**Sucessos: ** ${exalted(parseInt(dices))}
+**Resultados:** ${resultsArr}`)
+      }
+  }
 
-//Command imports
-const fs = require('node:fs')
-const path = require('node:path')
-const commandsPath = path.join(__dirname, "commands")
-const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"))
+const succesesArr = []
+const resultsArr = []
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-client.commands = new Collection()
 
-for (const file of commandFiles)    {
-    const filePath = path.join(commandsPath, file)
-    const command = require(filePath)
-    if  ("data" in command && "execute" in command)   {
-        client.commands.set(command.data.name, command)
-    }else{
-        console.log(`This command in ${filePath} has absent "data" or "execute"!`)
+//-------
+
+function exaltedD10(){
+  const firstNumber = Math.floor(Math.random()*3 + 1)
+  //Rolagem fraca
+  if  (firstNumber == 1)  {
+      const selector = Math.floor(Math.random()*4 + 1)
+    if  (selector == 1 || 2) {
+      const d10 = Math.floor(Math.random()*7 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
     }
+    if  (selector == 3) {
+      const d10 = Math.floor(Math.random()*10 + 1)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+    if  (selector == 4) {
+      const d10 = Math.floor(Math.random()*9 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+  }
+  //Rolagem mediana
+  if  (firstNumber == 2)  {
+    const selector = Math.floor(Math.random()*4 + 1)
+    if  (selector == 1) {
+      const d10 = Math.floor(Math.random()*7 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+    if  (selector == 2 || 3) {
+      const d10 = Math.floor(Math.random()*10 + 1)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+    if  (selector == 4) {
+      const d10 = Math.floor(Math.random()*9 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+  }
+  //Rolagem boa
+  if  (firstNumber == 3)  {
+    const selector = Math.floor(Math.random()*4 + 1)
+    if  (selector == 1) {
+      const d10 = Math.floor(Math.random()*7 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+    if  (selector == 2) {
+      const d10 = Math.floor(Math.random()*10 + 1)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+    if  (selector == 3 || 4) {
+      const d10 = Math.floor(Math.random()*9 + 2)
+      if(d10 == 10){
+        const print = 2
+        resultsArr.push(` **${d10}**`)
+        succesesArr.push(print)
+      }else if(d10 >= 7){
+        const print = 1
+        resultsArr.push(` ${d10}`)
+        succesesArr.push(print)
+      }else{
+        const print = 0
+        resultsArr.push(` ~~${d10}~~`)
+        succesesArr.push(print)
+      }
+      console.log(`Resultado: ${selector}`)
+      console.log(`Dado: ${d10}`)
+      return d10 
+    }
+  }
+  
+  
 }
 
+function exalted(diceInput){
+  succesesArr.length = 0
+  resultsArr.length = 0
+for(let i = 1; i <= diceInput; i++){
+  exaltedD10()
+}
+const sum = succesesArr.reduce(
+    (accumulator, currentValue) => accumulator + currentValue, 0
+  )
+  console.log(succesesArr)
+  return sum
+}
+//---------------------------------------
 
-//Bot login
-client.once(Events.ClientReady, c => {
-	console.log(`Hello! I'm ready to run magic and dices for you, ${c.user.tag}`);
-});
-
-client.login(TOKEN);
-
-//Interaction Listener
-client.on(Events.InteractionCreate, async interaction =>  {
-    if  (!interaction.isChatInputCommand()) return
-    const command = interaction.client.commands.get(interaction.commandName)
-    if  (!command){
-        console.error(`WHOA! Command not found!!`)
-        return
-    }
-    try {
-        await command.execute(interaction)
-    }
-    catch   (e) {
-        console.error(e)
-        await interaction.reply("WHOA! An error ocurred!")
-    }
-    
-})
+exalted(100)
