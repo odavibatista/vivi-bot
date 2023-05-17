@@ -1,18 +1,43 @@
 # Vivi Bot
 
 <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/60a8c6b8-917d-4ab8-adbc-83021cd14229" align="center">
+<br>
+<br>
 
-Vivi Bot é um bot para Discord desenvolvido, aplicado e hospedado. Uma aplicação que irá lhe ceder apoio em suas rolagens de dados e em funcionalidades para jogos de RPG, programação e armazenamento de informações. E o melhor de tudo, é open-source! 
+Vivi Bot is a Discord Bot developed, applied and hosted by daviebatista. This application will help you with many of your needs on RPGs gameplay, studying, note saving, and more! And the best of all, it's 100% open-source!
+<br>
+<br>
+<div align="center">
+    <a href="https://discordapp.com/api/oauth2/authorize?client_id=1097895798097850429&permissions=534723901512&scope=applications.commands%20bot" >
+    <img src="https://i.imgur.com/PP5v9gB.png">
+  </a>
+</div>
 
-# Como assim, open-source?!
+<br>
+<br>
 
-Você pode, à vontade, modificar e adicionar novos comandos ao Vivi Bot, clonando o repositório, e fazendo forks para si, para poder obter o código-fonte da aplicação.
+# What, open-source?!
 
-Assim como os Black Mages, Vivi Bot é replicável e multiplicável, fazendo assim com que você possa ter vários Vivis à sua disposição!
-<img src="https://github.com/daviebatista/vivi-bot/assets/91736880/5425021a-69c1-4bfb-902f-4f145141639c" align="center">
+Yes! You can modify and add features to Vivi Bot as much as you would like to, by cloning the Github Repository or forking it, so you can obtain the source code of the application.
+
+Vivi Bot is replicable, just like his Black Mages brothers of Final Fantasy IX. This way, you can have lots of Vivis by your side to help you with your needs!
+
+<br>
+<br>
+<div align="center">
+  <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/5425021a-69c1-4bfb-902f-4f145141639c" align="center" width="100%">
+</div>
+<br>
+Most of its config is already done, and you'll only need to add a command code and input to the new command file, which shortens your way in a large time, if you ever wished a bot that could fulfill your personal needs for many purposes. By acquiring Vivi Bot, you'll be able to save a lot of time of configuring and development.
+
+# Used Tech
+
+* Discord.js - API used for bot development in JS | TS <|> <a href="https://discord.js.org/docs/packages/core/0.6.0">Docs</a>
+* Dotenv library - Library used for .env files config. Since the application file comes in env format, I recommend you to read its <a href="https://github.com/motdotla/dotenv#readme">Docs</a>
+* Daki.cc - A Free Discord Dashboard for Bot Hosting. I highly recommend you to use <a href="https://dash.daki.cc/">Daki</a>, since it's truly affordable, but if you're planning on doing a local-hosted bot or using another hosting provider, you're free to go.
+<br>
 
 
+# Comandos
 
-* Comandos
-
-/rl - Realiza uma rolagem de dados para sistema Exalted, baseado no número de dados inseridos.
+/rl [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.
