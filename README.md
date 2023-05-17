@@ -38,6 +38,6 @@ Most of its config is already done, and you'll only need to add a command code a
 <br>
 
 
-# Comandos
+# Commands
 
-/rl [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.
+* /rl [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.
