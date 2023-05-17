@@ -14,7 +14,6 @@ Vivi Bot is a Discord Bot developed, applied and hosted by daviebatista. This ap
 </div>
 
 <br>
-<br>
 
 # What, open-source?!
 
