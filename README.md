@@ -9,7 +9,7 @@ Vivi Bot is a Discord Bot developed, applied and hosted by daviebatista. This ap
 <br>
 <div align="center">
     <a href="https://discordapp.com/api/oauth2/authorize?client_id=1097895798097850429&permissions=534723901512&scope=applications.commands%20bot" >
-    <img src="https://i.imgur.com/PP5v9gB.png">
+    <img src="https://i.imgur.com/PP5v9gB.png" width="250px">
   </a>
 </div>
 
