@@ -1,6 +1,8 @@
 # Vivi Bot
+<div align="center">
+   <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/60a8c6b8-917d-4ab8-adbc-83021cd14229" align="center" width="95%">
+</div>
 
-<img src="https://github.com/daviebatista/vivi-bot/assets/91736880/60a8c6b8-917d-4ab8-adbc-83021cd14229" align="center">
 <br>
 <br>
 
@@ -24,7 +26,7 @@ Vivi Bot is replicable, just like his Black Mages brothers of Final Fantasy IX. 
 <br>
 <br>
 <div align="center">
-  <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/5425021a-69c1-4bfb-902f-4f145141639c" align="center" width="100%">
+  <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/5425021a-69c1-4bfb-902f-4f145141639c" align="center" width="95%">
 </div>
 <br>
 Most of its config is already done, and you'll only need to add a command code and input to the new command file, which shortens your way in a large time, if you ever wished a bot that could fulfill your personal needs for many purposes. By acquiring Vivi Bot, you'll be able to save a lot of time of configuring and development.
