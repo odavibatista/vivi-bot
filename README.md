@@ -1,4 +1,4 @@
-# Vivi Bot
+# Vivi Bot - Dice rollings, magic, and more!
 <div align="center">
    <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/60a8c6b8-917d-4ab8-adbc-83021cd14229" align="center" width="95%">
 </div>
