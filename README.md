@@ -41,4 +41,9 @@ Most of its config is already done, and you'll only need to add a command code a
 
 # Vivi Bot's Native Commands
 
-* /rl [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.
+* D4
+/d4 [amount] - Rolls D4s on the wished amount.
+* D6
+/d6 [amount] - Rolls D6s on the wished amount.
+* Exalted Roll
+/er [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.
