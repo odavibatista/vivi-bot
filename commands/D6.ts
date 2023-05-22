@@ -19,8 +19,8 @@ module.exports = {
     }
 
 
-const resultsOfD6s   =   []
-const summedD6s   =    []
+const resultsOfD6s: number[]   =   []
+const summedD6s: string[]   =    []
 
 
 function rollD6()   {
