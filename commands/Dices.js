@@ -3,15 +3,15 @@ const { SlashCommandBuilder } = require('discord.js')
 //Importação do modulo discord.js
 module.exports = {
   data: new SlashCommandBuilder()
-      .setName('exalted')
-      .setDescription('Rolls a D10, for Exalted or VTM factor.')
+      .setName('rl')
+      .setDescription('Rolls an Exalted-based dice')
       .addStringOption(option =>
-        option.setName("amount")
+        option.setName("dados")
           .setDescription('Quantidade de dados a ser rolada:'))
       ,
   
       async execute(interaction)  {
-        const dices = interaction.options.getString('amount')
+        const dices = interaction.options.getString('dados')
           await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} dados.
 **Sucessos: ** ${exalted(parseInt(dices))}
 **Resultados:** ${resultsArr}`)
@@ -227,4 +227,3 @@ const sum = succesesArr.reduce(
   return sum
 }
 //---------------------------------------
-
