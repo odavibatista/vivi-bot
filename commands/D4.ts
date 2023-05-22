@@ -12,9 +12,9 @@ module.exports = {
     
         async execute(interaction)  {
             const dices = interaction.options.getString('amount')
-            await interaction.reply(`**${interaction.user.username}** rolou${parseInt(dices)} D4.
-    **Soma: ** ${multipleD4(parseInt(dices))}
-    **Resultados:** ${summedD4s}`)
+            await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)}D4.
+**Soma: ** ${multipleD4(parseInt(dices))}
+**Resultados:** ${summedD4s}`)
         }
     }
 
