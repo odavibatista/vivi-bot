@@ -12,7 +12,7 @@ module.exports = {
   
       async execute(interaction)  {
         const dices = interaction.options.getString('dados')
-          await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} D10.
+          await interaction.reply(`**${interaction.user.username}** rolou${parseInt(dices)} D10.
 **Sucessos: ** ${exalted(parseInt(dices))}
 **Resultados:** ${resultsArr}`)
       }

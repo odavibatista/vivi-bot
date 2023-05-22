@@ -18,7 +18,7 @@ module.exports = {
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             const dices = interaction.options.getString('amount');
-            yield interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} D6.
+            yield interaction.reply(`**${interaction.user.username}** rolou${parseInt(dices)} D6.
     **Soma: ** ${multipleD6(parseInt(dices))}
     **Resultados:** ${summedD6s}`);
         });
