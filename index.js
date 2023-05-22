@@ -2,7 +2,7 @@ const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 
 const dotenv = require('dotenv')
 dotenv.config()
-const { TOKEN, CLIENT_ID, GUILD_ID } = process.env
+const { TOKEN, CLIENT_ID, GUILD_ID, RANDOM_URL, RANDOM_ORG_KEY } = process.env
 
 //Command imports
 const fs = require('node:fs')

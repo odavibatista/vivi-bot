@@ -14,13 +14,13 @@ module.exports = {
             const dices = interaction.options.getString('amount')
             await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)} D6.
     **Soma: ** ${multipleD6(parseInt(dices))}
-    **Resultados:** ${summedDices}`)
+    **Resultados:** ${summedD6s}`)
         }
     }
 
 
-const results   =   []
-const summedDices   =    []
+const resultsOfD6s   =   []
+const summedD6s   =    []
 
 
 function rollD6()   {
@@ -31,21 +31,21 @@ function rollD6()   {
         const selector:number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1 || selector == 2) {
             const d6:number  = Math.floor(Math.random()*2 + 1)
-                summedDices.push(` ${d6}`)
-                results.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
             
         }
 
         if  (selector == 3) {
             const d6:number  = Math.floor(Math.random()*3 + 1)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
 
         if  (selector == 4) {
             const d6:number  = Math.floor(Math.random()*4 + 1)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
     }
 
@@ -54,20 +54,20 @@ function rollD6()   {
         const selector: number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1) {
             const d6:   number  = Math.floor(Math.random()*3 + 1)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
 
         if  (selector == 2 || selector == 3)    {
             const d6:   number  = Math.floor(Math.random()*4 + 2)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
 
         if  (selector == 4) {
             const d6:   number  = Math.floor(Math.random()*4 + 3)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
     }
 
@@ -76,34 +76,34 @@ function rollD6()   {
         const selector: number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1) {
             const d6:   number = Math.floor(Math.random()*5 + 2)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
             
         }
 
         if  (selector == 2)    {
             const d6:   number = Math.floor(Math.random()*4 + 3)
-            summedDices.push(` ${d6}`)
-            results.push(d6) 
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6) 
         }
 
         if  (selector == 3 || selector == 4) {
             const d6:   number = Math.floor(Math.random()*3 + 4)
-            summedDices.push(` ${d6}`)
-            results.push(d6)
+            summedD6s.push(` ${d6}`)
+            resultsOfD6s.push(d6)
         }
     }
 }
 
 function multipleD6(diceInput){
-    results.length = 0
-    summedDices.length = 0
+    resultsOfD6s.length = 0
+    summedD6s.length = 0
     for(let i = 1; i <= diceInput; i++){
         rollD6()
     }
-    const sum = results.reduce(
+    const sum = resultsOfD6s.reduce(
         (accumulator, currentValue) => accumulator + currentValue, 0
         )
-        console.log(results)
+        console.log(resultsOfD6s)
         return sum
 }
