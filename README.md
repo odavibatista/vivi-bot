@@ -43,9 +43,9 @@ Most of its config is already done, and you'll only need to add a command code a
 <h3>Heads Or Tails</h3>
 <p>/hot - Flips a coin, resulting in "Heads" or "Tails".</p>
 <h3>D4</h3>
-<p>/d4 [amount] [modifier] - Rolls D4s on the wished amount and with the wished modifier..</p>
+<p>/d4 [amount] [modifier] - Rolls D4s on the wished amount with the added modifier.</p>
 <h3>D6</h3>
-<p>/d6 [amount] - Rolls D6s on the wished amount.</p>
+<p>/d6 [amount] [modifier] - Rolls D6s on the wished amount with the added modifier.</p>
 <h3>D10</h3>
 <p>/d10 [amount] - Rolls D10s on the wished amount.</p>
 <h3>Exalted Roll</h3>
