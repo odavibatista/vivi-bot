@@ -1,6 +1,6 @@
 {
   "name": "vivi-bot",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Discord Application template for gaming, RPG and functionalities, built with Discord.JS, TypeScript, and Node.ts.",
   "main": "index.js",
   "scripts": {
