@@ -52,5 +52,7 @@ Most of its config is already done, and you'll only need to add a command code a
 <p>/d10 [amount] [modifier] - Rolls D10s on the wished amount with the added modifier.</p>
 <h3>D12</h3>
 <p>/d12 [amount] [modifier] - Rolls D12s on the wished amount with the added modifier.</p>
+<h3>D20</h3>
+<p>/d20 [cd] [modifier] - Rolls a D20 with the added modifier and chosen success rate.</p>
 <h3>Exalted Roll</h3>
 <p>/er [amount] - Realizes an Exalted/VampireTM based dice rolling, with the amount of dices chosen by the input.</p>      

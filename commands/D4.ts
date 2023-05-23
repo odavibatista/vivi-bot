@@ -12,7 +12,6 @@ module.exports = {
             option.setName("modifier")
             .setDescription('Modificador da rolagem'))
         ,
-    
         async execute(interaction)  {
             const dices = interaction.options.getString('amount')
             const modifier = interaction.options.getInteger('modifier')
