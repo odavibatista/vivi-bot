@@ -48,6 +48,8 @@ Most of its config is already done, and you'll only need to add a command code a
 <p>/d4 [amount] [modifier] - Rolls D4s on the wished amount with the added modifier.</p>
 <h3>D6</h3>
 <p>/d6 [amount] [modifier] - Rolls D6s on the wished amount with the added modifier.</p>
+<h3>D8</h3>
+<p>/d8 [amount] [modifier] - Rolls D8s on the wished amount with the added modifier.</p>
 <h3>D10</h3>
 <p>/d10 [amount] [modifier] - Rolls D10s on the wished amount with the added modifier.</p>
 <h3>D12</h3>

@@ -31,7 +31,7 @@ const summedD6s: string[]   =    []
 function rollD6()   {
     const firstNumber:number  = Math.floor(Math.random()*3 + 1)
     
-    /*Rolagem Fraca*/
+    /*Weak Roll*/
     if  (firstNumber === 1) {
         const selector:number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1 || selector == 2) {
@@ -43,14 +43,14 @@ function rollD6()   {
 
         if  (selector == 3) {
             const d6:number  = Math.floor(Math.random()*3 + 1)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
 
         if  (selector == 4) {
             const d6:number  = Math.floor(Math.random()*4 + 1)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
     }
 
@@ -59,20 +59,20 @@ function rollD6()   {
         const selector: number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1) {
             const d6:   number  = Math.floor(Math.random()*3 + 1)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
 
         if  (selector == 2 || selector == 3)    {
             const d6:   number  = Math.floor(Math.random()*4 + 2)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
 
         if  (selector == 4) {
             const d6:   number  = Math.floor(Math.random()*4 + 3)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
     }
 
@@ -81,21 +81,21 @@ function rollD6()   {
         const selector: number  = Math.floor(Math.random()*4 + 1)
         if  (selector == 1) {
             const d6:   number = Math.floor(Math.random()*5 + 2)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
             
         }
 
         if  (selector == 2)    {
             const d6:   number = Math.floor(Math.random()*4 + 3)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6) 
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6) 
         }
 
         if  (selector == 3 || selector == 4) {
             const d6:   number = Math.floor(Math.random()*3 + 4)
-            summedD6s.push(` ${d6}`)
-            resultsOfD6s.push(d6)
+                summedD6s.push(` ${d6}`)
+                resultsOfD6s.push(d6)
         }
     }
 }
