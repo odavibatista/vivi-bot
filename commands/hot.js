@@ -15,7 +15,7 @@ module.exports = {
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             yield interaction.reply(`**${interaction.user.username}** jogou uma moeda.
-    Resultado: ${headsOrTails}`);
+**Resultado:** ${headsOrTails()}`);
         });
     }
 };

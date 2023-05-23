@@ -6,7 +6,7 @@ data: new SlashCommandBuilder()
 
     async execute(interaction)  {
     await interaction.reply(`**${interaction.user.username}** jogou uma moeda.
-    Resultado: ${headsOrTails}`)
+**Resultado:** ${headsOrTails()}`)
     }
 }
 
