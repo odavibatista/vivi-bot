@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('discord.js')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('d10')
-        .setDescription('Rolls a D10 on the wished amount')
+        .setDescription('Rolls D10s on the wished amount')
         .addStringOption(option =>
             option.setName("amount")
             .setDescription('Quantidade de D10s a ser rolada:'))
