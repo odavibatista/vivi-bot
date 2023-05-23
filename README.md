@@ -40,5 +40,5 @@ Most of its config is already done, and you'll only need to add a command code a
 
 # Vivi Bot Docs
 
-<a href="https://github.com/daviebatista/vivi-bot/tree/V2.0/commands#readme">Check out the bot's native Docs!</a>
+<a href="https://github.com/daviebatista/vivi-bot/tree/V2.1/commands#readme">Check out the bot's native Docs!</a>
 
