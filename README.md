@@ -40,7 +40,8 @@ Most of its config is already done, and you'll only need to add a command code a
 
 
 # Vivi Bot's Native Commands
-
+<h3>Heads Or Tails</h3>
+<p>/hot - Flips a coin, resulting in "Heads" or "Tails".</p>
 <h3>D4</h3>
 <p>/d4 [amount] - Rolls D4s on the wished amount.</p>
 <h3>D6</h3>
