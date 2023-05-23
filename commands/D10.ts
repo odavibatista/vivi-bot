@@ -7,13 +7,18 @@ module.exports = {
         .setDescription('Rolls a D10 on the wished amount')
         .addStringOption(option =>
             option.setName("amount")
-            .setDescription('Quantidade de dados a ser rolada:'))
+            .setDescription('Quantidade de D10s a ser rolada:'))
+        .addIntegerOption(option =>
+            option.setName("modifier")
+            .setDescription('Modificador da rolagem'))
         ,
     
         async execute(interaction)  {
             const dices = interaction.options.getString('amount')
+            const modifier = interaction.options.getInteger('modifier')
             await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)}D10.
-**Soma: ** ${multipleD10(parseInt(dices))}
+**Modificador: ** ${modifier ? modifier : 0}
+**Soma: ** ${multipleD10(parseInt(dices), parseInt(modifier))}
 **Resultados:** ${summedD10s}`)
         }
     }
@@ -95,9 +100,13 @@ function rollD10()   {
     }
 }
 
-function multipleD10(diceInput){
+function multipleD10(diceInput: number, modifier?:  number){
     resultsOfD10s.length = 0
     summedD10s.length = 0
+    if(modifier){
+        resultsOfD10s.push(modifier)
+    }if(modifier === null){
+        modifier === 0}
     for(let i = 1; i <= diceInput; i++){
         rollD10()
     }
