@@ -1,11 +1,13 @@
 {
   "name": "vivi-bot",
-  "version": "1.1.1",
+  "version": "1.8.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc-watch": "tsc"
+    "tsc-watch": "tsc",
+    "deploy": "node deploy-commands.js",
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
