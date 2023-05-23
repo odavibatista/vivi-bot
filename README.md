@@ -40,6 +40,8 @@ Most of its config is already done, and you'll only need to add a command code a
 
 
 # Vivi Bot's Native Commands
+<h3>List All Commands</h3>
+<p>/commands - Gives a list of all the bot's native commands.</p>
 <h3>Heads Or Tails</h3>
 <p>/hot - Flips a coin, resulting in "Heads" or "Tails".</p>
 <h3>D4</h3>
