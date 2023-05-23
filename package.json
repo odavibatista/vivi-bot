@@ -1,7 +1,7 @@
 {
   "name": "vivi-bot",
-  "version": "1.9.1",
-  "description": "",
+  "version": "1.9.2",
+  "description": "Discord Application template for gaming, RPG and functionalities, built with Discord.JS, TypeScript, and Node.ts.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
