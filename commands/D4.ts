@@ -8,12 +8,17 @@ module.exports = {
         .addStringOption(option =>
             option.setName("amount")
             .setDescription('Quantidade de D4s a ser rolada:'))
+        .addIntegerOption(option =>
+            option.setName("modifier")
+            .setDescription('Modificador da rolagem'))
         ,
     
         async execute(interaction)  {
             const dices = interaction.options.getString('amount')
+            const modifier = interaction.options.getInteger('modifier')
             await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)}D4.
-**Soma: ** ${multipleD4(parseInt(dices))}
+**Modificador: ** ${modifier}
+**Soma: ** ${multipleD4(parseInt(dices), parseInt(modifier))}
 **Resultados:** ${summedD4s}`)
         }
     }
@@ -95,9 +100,13 @@ function rollD4()   {
     }
 }
 
-function multipleD4(diceInput){
+function multipleD4(diceInput: number, modifier?: number){
     resultsOfD4s.length = 0
     summedD4s.length = 0
+    if(modifier){
+        resultsOfD4s.push(modifier)
+    }   else modifier === 0
+
     for(let i = 1; i <= diceInput; i++){
         rollD4()
     }
