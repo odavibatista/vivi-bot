@@ -38,5 +38,7 @@ Most of its config is already done, and you'll only need to add a command code a
 * Daki.cc - A Free Discord Dashboard for Bot Hosting. I highly recommend you to use <a href="https://dash.daki.cc/">Daki</a>, since it's truly affordable, but if you're planning on doing a local-hosted bot or using another hosting provider, you're free to go.
 <br>
 
+# Vivi Bot Docs
 
+<a href="https://github.com/daviebatista/vivi-bot/tree/V2.0/commands#readme">Check out the bot's native Docs!</a>
 
