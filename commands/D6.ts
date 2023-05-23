@@ -7,13 +7,18 @@ module.exports = {
         .setDescription('Rolls a D6 on the wished amount')
         .addStringOption(option =>
             option.setName("amount")
-            .setDescription('Quantidade de dados a ser rolada:'))
+            .setDescription('Quantidade de D6s a ser rolada:'))
+        .addIntegerOption(option =>
+            option.setName("modifier")
+            .setDescription('Modificador da rolagem'))
         ,
-    
+        
         async execute(interaction)  {
             const dices = interaction.options.getString('amount')
+            const modifier = interaction.options.getInteger('modifier')
             await interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)}D6.
-**Soma: ** ${multipleD6(parseInt(dices))}
+**Modificador: ** ${modifier ? modifier : 0}
+**Soma: ** ${multipleD6(parseInt(dices), modifier)}
 **Resultados:** ${summedD6s}`)
         }
     }
@@ -95,9 +100,13 @@ function rollD6()   {
     }
 }
 
-function multipleD6(diceInput){
+function multipleD6(diceInput: number, modifier?: number){
     resultsOfD6s.length = 0
     summedD6s.length = 0
+    if(modifier){
+        resultsOfD6s.push(modifier)
+    }if(modifier === null){
+        modifier === 0}
     for(let i = 1; i <= diceInput; i++){
         rollD6()
     }

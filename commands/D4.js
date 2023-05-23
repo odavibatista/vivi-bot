@@ -22,7 +22,7 @@ module.exports = {
             const dices = interaction.options.getString('amount');
             const modifier = interaction.options.getInteger('modifier');
             yield interaction.reply(`**${interaction.user.username}** rolou ${parseInt(dices)}D4.
-**Modificador: ** ${modifier}
+**Modificador: ** ${modifier ? modifier : 0}
 **Soma: ** ${multipleD4(parseInt(dices), parseInt(modifier))}
 **Resultados:** ${summedD4s}`);
         });
@@ -96,8 +96,9 @@ function multipleD4(diceInput, modifier) {
     if (modifier) {
         resultsOfD4s.push(modifier);
     }
-    else
+    if (modifier === null) {
         modifier === 0;
+    }
     for (let i = 1; i <= diceInput; i++) {
         rollD4();
     }
