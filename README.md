@@ -33,6 +33,7 @@ Most of its config is already done, and you'll only need to add a command code a
 
 # Used Tech
 
+* Docker - The project comes with the Docker Container Composer files. You can create the container in your local environment to speed up the process of using the application.
 * Discord.js - API used for bot development in JS | TS <|> <a href="https://discord.js.org/docs/packages/core/0.6.0">Docs</a>
 * Dotenv library - Library used for .env files config. Since the application file comes in env format, I recommend you to read its <a href="https://github.com/motdotla/dotenv#readme">Docs</a>
 * Daki.cc - A Free Discord Dashboard for Bot Hosting. I highly recommend you to use <a href="https://dash.daki.cc/">Daki</a>, since it's truly affordable, but if you're planning on doing a local-hosted bot or using another hosting provider, you're free to go.
