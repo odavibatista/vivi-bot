@@ -1,9 +1,10 @@
 # Vivi Bot - Dice rollings, magic, and more!
 <div align="center">
-   <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/60a8c6b8-917d-4ab8-adbc-83021cd14229" align="center" width="95%">
+   <img src="https://github.com/daviebatista/vivi-bot/assets/91736880/d8236188-b82d-4bcd-bd4d-e7abef3d63cf" align="center" width="95%">
 </div>
 
 <br>
+
 <br>
 
 Vivi Bot is a Discord Bot developed, applied and hosted by daviebatista. This application will help you with many of your needs on RPGs gameplay, studying, note saving, and more! And the best of all, it's 100% open-source!
