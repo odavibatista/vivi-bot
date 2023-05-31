@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc-watch": "tsc",
     "deploy": "node deploy-commands.js",
-    "dev": "npx tsc-watch && npm run deploy && node index.js"
+    "dev": "npm run deploy && node index.js"
   },
   "keywords": [],
   "author": "",

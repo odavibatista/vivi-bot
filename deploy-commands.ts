@@ -1,3 +1,4 @@
+//@ts-ignore
 const { REST, Routes } = require('discord.js')
 
 //Require do 'dotenv'

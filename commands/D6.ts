@@ -1,3 +1,4 @@
+//@ts-ignore
 const { SlashCommandBuilder } = require('discord.js')
 
 //Importação do modulo discord.js
