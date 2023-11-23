@@ -7,6 +7,7 @@
 <br>
 
 Vivi Bot is a Discord Bot developed, applied and hosted by daviebatista. This application will help you with many of your needs on RPGs gameplay, studying, note saving, and more! And the best of all, it's 100% open-source!
+The project now has a Python version under ongoing build. Check it out <a href="https://github.com/odavibatista/vivi-bot-py">here</a>!
 <br>
 <br>
 <div align="center">
